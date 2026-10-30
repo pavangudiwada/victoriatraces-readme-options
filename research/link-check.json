@@ -1,0 +1,351 @@
+[
+  {
+    "url": "https://careers.victoriametrics.com/",
+    "status": 200,
+    "final": "https://careers.victoriametrics.com/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/helm/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/helm/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/helm/victoria-traces-cluster/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/helm/victoria-traces-cluster/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/helm/victoria-traces-single/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/helm/victoria-traces-single/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/operator/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/operator/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victorialogs/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victorialogs/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victorialogs/changelog/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victorialogs/changelog/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victorialogs/cluster/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victorialogs/cluster/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victorialogs/data-ingestion/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victorialogs/data-ingestion/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victorialogs/enterprise/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victorialogs/keyconcepts/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victorialogs/keyconcepts/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victorialogs/logsql/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victorialogs/logsql/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victorialogs/quickstart/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victorialogs/quickstart/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victorialogs/victorialogs-datasource/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victorialogs/victorialogs-datasource/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victorialogs/vmalert/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victorialogs/vmalert/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victoriametrics/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victoriametrics/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victoriametrics/casestudies/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victoriametrics/casestudies/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victoriametrics/changelog/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victoriametrics/changelog/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victoriametrics/cluster-victoriametrics/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victoriametrics/cluster-victoriametrics/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victoriametrics/contributing/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victoriametrics/contributing/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victoriametrics/enterprise/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victoriametrics/enterprise/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victoriametrics/integrations/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victoriametrics/integrations/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victoriametrics/integrations/grafana/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victoriametrics/integrations/grafana/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victoriametrics/integrations/prometheus/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victoriametrics/integrations/prometheus/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victoriametrics/metricsql/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victoriametrics/metricsql/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victoriametrics/quick-start/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victoriametrics/quick-start/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victoriametrics/single-server-victoriametrics/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victoriametrics/single-server-victoriametrics/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victoriametrics/vmagent/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victoriametrics/vmagent/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victoriametrics/vmalert/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victoriametrics/vmalert/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victoriametrics/vmauth/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victoriametrics/vmauth/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victoriatraces/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victoriatraces/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victoriatraces/changelog/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victoriatraces/changelog/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victoriatraces/cluster/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victoriatraces/cluster/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victoriatraces/data-ingestion/opentelemetry/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victoriatraces/data-ingestion/opentelemetry/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victoriatraces/querying/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victoriatraces/querying/"
+  },
+  {
+    "url": "https://docs.victoriametrics.com/victoriatraces/quick-start/",
+    "status": 200,
+    "final": "https://docs.victoriametrics.com/victoriatraces/quick-start/"
+  },
+  {
+    "url": "https://github.com/VictoriaMetrics/VictoriaLogs",
+    "status": 200,
+    "final": "https://github.com/VictoriaMetrics/VictoriaLogs"
+  },
+  {
+    "url": "https://github.com/VictoriaMetrics/VictoriaLogs/actions/workflows/main.yml",
+    "status": 200,
+    "final": "https://github.com/VictoriaMetrics/VictoriaLogs/actions/workflows/main.yml"
+  },
+  {
+    "url": "https://github.com/VictoriaMetrics/VictoriaLogs/blob/master/LICENSE",
+    "status": 200,
+    "final": "https://github.com/VictoriaMetrics/VictoriaLogs/blob/master/LICENSE"
+  },
+  {
+    "url": "https://github.com/VictoriaMetrics/VictoriaLogs/issues",
+    "status": 200,
+    "final": "https://github.com/VictoriaMetrics/VictoriaLogs/issues"
+  },
+  {
+    "url": "https://github.com/VictoriaMetrics/VictoriaLogs/releases",
+    "status": 200,
+    "final": "https://github.com/VictoriaMetrics/VictoriaLogs/releases"
+  },
+  {
+    "url": "https://github.com/VictoriaMetrics/VictoriaLogs/releases/latest",
+    "status": 200,
+    "final": "https://github.com/VictoriaMetrics/VictoriaLogs/releases/tag/v1.53.0"
+  },
+  {
+    "url": "https://github.com/VictoriaMetrics/VictoriaMetrics",
+    "status": 200,
+    "final": "https://github.com/VictoriaMetrics/VictoriaMetrics"
+  },
+  {
+    "url": "https://github.com/VictoriaMetrics/VictoriaMetrics/actions/workflows/build.yml",
+    "status": 200,
+    "final": "https://github.com/VictoriaMetrics/VictoriaMetrics/actions/workflows/build.yml"
+  },
+  {
+    "url": "https://github.com/VictoriaMetrics/VictoriaMetrics/blob/master/LICENSE",
+    "status": 200,
+    "final": "https://github.com/VictoriaMetrics/VictoriaMetrics/blob/master/LICENSE"
+  },
+  {
+    "url": "https://github.com/VictoriaMetrics/VictoriaMetrics/issues",
+    "status": 200,
+    "final": "https://github.com/VictoriaMetrics/VictoriaMetrics/issues"
+  },
+  {
+    "url": "https://github.com/VictoriaMetrics/VictoriaMetrics/releases",
+    "status": 200,
+    "final": "https://github.com/VictoriaMetrics/VictoriaMetrics/releases"
+  },
+  {
+    "url": "https://github.com/VictoriaMetrics/VictoriaTraces",
+    "status": 200,
+    "final": "https://github.com/VictoriaMetrics/VictoriaTraces"
+  },
+  {
+    "url": "https://github.com/VictoriaMetrics/VictoriaTraces/actions/workflows/main.yml",
+    "status": 200,
+    "final": "https://github.com/VictoriaMetrics/VictoriaTraces/actions/workflows/main.yml"
+  },
+  {
+    "url": "https://github.com/VictoriaMetrics/VictoriaTraces/blob/master/LICENSE",
+    "status": 200,
+    "final": "https://github.com/VictoriaMetrics/VictoriaTraces/blob/master/LICENSE"
+  },
+  {
+    "url": "https://github.com/VictoriaMetrics/VictoriaTraces/issues",
+    "status": 200,
+    "final": "https://github.com/VictoriaMetrics/VictoriaTraces/issues"
+  },
+  {
+    "url": "https://github.com/VictoriaMetrics/VictoriaTraces/releases",
+    "status": 200,
+    "final": "https://github.com/VictoriaMetrics/VictoriaTraces/releases"
+  },
+  {
+    "url": "https://github.com/VictoriaMetrics/VictoriaTraces/releases/latest",
+    "status": 200,
+    "final": "https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.12.1"
+  },
+  {
+    "url": "https://github.com/VictoriaMetrics/helm-charts",
+    "status": 200,
+    "final": "https://github.com/VictoriaMetrics/helm-charts"
+  },
+  {
+    "url": "https://github.com/VictoriaMetrics/operator",
+    "status": 200,
+    "final": "https://github.com/VictoriaMetrics/operator"
+  },
+  {
+    "url": "https://hub.docker.com/r/victoriametrics/victoria-logs/",
+    "status": 200,
+    "final": "https://hub.docker.com/r/victoriametrics/victoria-logs/"
+  },
+  {
+    "url": "https://hub.docker.com/r/victoriametrics/victoria-traces/",
+    "status": 200,
+    "final": "https://hub.docker.com/r/victoriametrics/victoria-traces/"
+  },
+  {
+    "url": "https://play-logql.victoriametrics.com/",
+    "status": 200,
+    "final": "https://play-logql.victoriametrics.com/"
+  },
+  {
+    "url": "https://play-sql.victoriametrics.com/",
+    "status": 200,
+    "final": "https://play-sql.victoriametrics.com/"
+  },
+  {
+    "url": "https://play-vmlogs.victoriametrics.com/",
+    "status": 200,
+    "final": "https://play-vmlogs.victoriametrics.com/select/vmui/"
+  },
+  {
+    "url": "https://play-vtraces.victoriametrics.com/select/vmui/",
+    "status": 200,
+    "final": "https://play-vtraces.victoriametrics.com/select/vmui/"
+  },
+  {
+    "url": "https://play.victoriametrics.com/",
+    "status": 200,
+    "final": "https://play.victoriametrics.com/select/0/vmui/"
+  },
+  {
+    "url": "https://slack.victoriametrics.com/",
+    "status": 200,
+    "final": "https://inviter.co:443/victoriametrics"
+  },
+  {
+    "url": "https://victoriametrics.com/",
+    "status": 200,
+    "final": "https://victoriametrics.com/"
+  },
+  {
+    "url": "https://victoriametrics.com/blog/",
+    "status": 200,
+    "final": "https://victoriametrics.com/blog/"
+  },
+  {
+    "url": "https://victoriametrics.com/products/cloud/",
+    "status": 200,
+    "final": "https://victoriametrics.com/products/cloud/"
+  },
+  {
+    "url": "https://victoriametrics.com/products/enterprise/trial/",
+    "status": 200,
+    "final": "https://victoriametrics.com/products/enterprise/trial/"
+  },
+  {
+    "url": "https://victoriametrics.com/security/",
+    "status": 200,
+    "final": "https://victoriametrics.com/security/"
+  },
+  {
+    "url": "https://www.youtube.com/@VictoriaMetrics",
+    "status": 200,
+    "final": "https://www.youtube.com/@VictoriaMetrics"
+  }
+]

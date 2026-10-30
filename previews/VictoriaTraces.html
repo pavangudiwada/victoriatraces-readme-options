@@ -1,0 +1,82 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>VictoriaTraces README review</title><style>*{box-sizing:border-box}body{margin:0;font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1f2328;background:#fff}nav{padding:14px 24px;background:#f6f8fa;border-bottom:1px solid #d1d9e0;display:flex;gap:22px;align-items:center;flex-wrap:wrap}a{color:#0969da;text-decoration:none}a:hover{text-decoration:underline}nav strong{margin-right:auto}main{max-width:960px;margin:32px auto;border:1px solid #d1d9e0;border-radius:6px}header{font-size:14px;padding:12px 24px;border-bottom:1px solid #d1d9e0;background:#f6f8fa}article{padding:32px}h1{font-size:30px;line-height:1.25;margin:24px 0 16px;padding-bottom:12px;border-bottom:1px solid #d1d9e0}h2{font-size:24px;line-height:1.3;margin:30px 0 16px;padding-bottom:8px;border-bottom:1px solid #d1d9e0}p{margin:0 0 16px}p[align=center]{text-align:center}h1[align=center]{text-align:center}img{max-width:100%;height:auto;vertical-align:middle}pre{font:13px/1.5 ui-monospace,SFMono-Regular,monospace;padding:16px;background:#f6f8fa;border-radius:6px;overflow:auto}code{font:85% ui-monospace,SFMono-Regular,monospace;background:#eff1f3;padding:.15em .3em;border-radius:4px}pre code{padding:0;background:none}li{margin:8px 0}ul{padding-left:25px}table{display:block;overflow:auto;border-collapse:collapse;margin:16px 0;width:100%}th,td{border:1px solid #d1d9e0;padding:8px 13px;text-align:left}tr:nth-child(2n){background:#f6f8fa}blockquote{border-left:4px solid #9a6700;background:#fff8c5;padding:12px 16px;margin:16px 0;color:#4d3c12}blockquote p{margin:0}sub{font-size:13px;vertical-align:baseline;color:#59636e}.notice{font-size:13px;color:#59636e}.index{padding:32px}.index a{display:block;border:1px solid #d1d9e0;padding:18px;margin:12px 0;border-radius:6px}@media(max-width:600px){main{margin:12px 8px}article{padding:18px}h1{font-size:26px}h2{font-size:22px}nav{gap:12px;padding:12px}td,th{min-width:130px}body{font-size:15px}}@media(prefers-color-scheme:dark){body{background:#0d1117;color:#e6edf3}nav,header,pre,tr:nth-child(2n){background:#161b22}main,th,td,header,nav,h1,h2{border-color:#30363d}a{color:#58a6ff}code{background:#262c36}blockquote{background:#291f00;color:#f2dc8a}sub,.notice{color:#9da7b3}}</style></head><body><nav><strong>VictoriaMetrics · README review</strong><a href="VictoriaMetrics.html">VictoriaMetrics</a><a href="VictoriaLogs.html">VictoriaLogs</a><a href="VictoriaTraces.html">VictoriaTraces</a><a href="Organization.html">Organization</a></nav><main><header>VictoriaMetrics / VictoriaTraces / README.md <span class="notice"> · Local proposal</span></header><article><p align="center">
+  <picture><source media="(prefers-color-scheme: dark)" srcset="../VictoriaTraces/assets/logo-dark.svg"><img src="../VictoriaTraces/assets/logo.svg" width="270" alt="VictoriaTraces"></picture>
+</p>
+<h1 align="center">Follow a request. Find where the time goes.</h1>
+<p align="center">An open-source database for distributed traces.<br>Ingest OpenTelemetry spans, find requests, and inspect their waterfalls.</p>
+
+<p align="center"><a href="#try-it-locally">Quick start</a> · <a href="https://play-vtraces.victoriametrics.com/select/vmui/">Live playground</a> · <a href="https://docs.victoriametrics.com/victoriatraces/">Documentation</a> · <a href="https://slack.victoriametrics.com/">Community</a></p>
+<p align="center">
+  <a href="https://github.com/VictoriaMetrics/VictoriaTraces/releases"><img src="https://img.shields.io/github/v/release/VictoriaMetrics/VictoriaTraces?label=release&color=621773" alt="Latest release"></a>
+  <a href="https://github.com/VictoriaMetrics/VictoriaTraces/actions/workflows/main.yml"><img src="https://github.com/VictoriaMetrics/VictoriaTraces/actions/workflows/main.yml/badge.svg?branch=master" alt="Build status"></a>
+  <a href="https://github.com/VictoriaMetrics/VictoriaTraces/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-Apache%202.0-blue" alt="Apache 2.0"></a>
+</p>
+
+<blockquote>
+<p><strong>Work in progress.</strong> On-disk formats and APIs may change without backward compatibility. Some links or static files may be unavailable. Check the <a href="https://docs.victoriametrics.com/victoriatraces/changelog/">changelog</a> before upgrading.</p>
+</blockquote>
+<p align="center"><a href="https://play-vtraces.victoriametrics.com/select/vmui/"><img src="../VictoriaTraces/assets/trace-waterfall.jpg" width="840" alt="VictoriaTraces waterfall showing a real request across load-generator, frontend-proxy, frontend, and product-catalog, with span details."></a></p>
+<p align="center"><sub>Follow parent and child spans across services, then inspect a span's fields, events, and links. <a href="https://play-vtraces.victoriametrics.com/select/vmui/">Explore live traces →</a></sub></p>
+
+<h2 id="why-victoriatraces">Why VictoriaTraces?</h2>
+<ul>
+<li><strong>Use your OpenTelemetry instrumentation.</strong> Ingest spans over OTLP/HTTP or a separately enabled OTLP/gRPC listener. <a href="https://docs.victoriametrics.com/victoriatraces/data-ingestion/opentelemetry/">Ingestion guide</a>.</li>
+<li><strong>Find a request, then investigate it.</strong> Use the built-in Trace Explorer and waterfall, or query span data with LogsQL. <a href="https://docs.victoriametrics.com/victoriatraces/querying/">Querying</a>.</li>
+<li><strong>Keep familiar query tools.</strong> Connect Grafana&#39;s Jaeger data source or Jaeger UI through the supported Jaeger query APIs. <a href="https://docs.victoriametrics.com/victoriatraces/querying/">Supported APIs</a>.</li>
+<li><strong>Run without a separate storage service.</strong> Store traces on disk with a single binary or an open-source cluster. <a href="https://docs.victoriametrics.com/victoriatraces/#storage">Storage</a> · <a href="https://docs.victoriametrics.com/victoriatraces/cluster/">Cluster</a>.</li>
+</ul>
+<h2 id="try-it-locally">Try it locally</h2>
+<p>With Docker installed, start a single-node instance:</p>
+<pre><code class="language-sh">docker run --rm --name victoriatraces \
+  -p 127.0.0.1:10428:10428 \
+  -v victoriatraces-data:/victoria-traces-data \
+  victoriametrics/victoria-traces:v0.12.1 \
+  -storageDataPath=/victoria-traces-data
+</code></pre>
+<p>For an existing OpenTelemetry-instrumented application running on your host, set:</p>
+<pre><code class="language-sh">export OTEL_EXPORTER_OTLP_TRACES_PROTOCOL=http/protobuf
+export OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=http://localhost:10428/insert/opentelemetry/v1/traces
+</code></pre>
+<p>Restart the application with these settings and send it a request. Open <a href="http://localhost:10428/select/vmui/">Trace Explorer</a>; allow for the <a href="https://docs.victoriametrics.com/victoriatraces/querying/#search-latency">default search delay</a>. Applications in containers need a reachable host address instead of their own <code>localhost</code>.</p>
+<p>No instrumented application yet? Follow the <a href="https://docs.victoriametrics.com/victoriatraces/quick-start/#write-data">sample-span and demo instructions</a>. Data persists in the named Docker volume.</p>
+<h2 id="find-the-request-you-need">Find the request you need</h2>
+<p align="center"><a href="../VictoriaTraces/assets/trace-explorer.jpg"><img src="../VictoriaTraces/assets/trace-explorer.jpg" width="840" alt="VictoriaTraces Trace Explorer with populated trace results and the preview for the same request shown in the waterfall above."></a></p>
+
+<p>Filter by service, operation, duration, or span attributes. Select a result to preview its services and duration, then open the full trace. <a href="https://docs.victoriametrics.com/victoriatraces/querying/">Explore the query interface</a>.</p>
+<h2 id="how-it-works">How it works</h2>
+<p align="center"><a href="../VictoriaTraces/assets/how-it-works.svg"><img src="../VictoriaTraces/assets/how-it-works.png" width="840" alt="Instrumented applications export OTLP spans through an optional OpenTelemetry Collector to VictoriaTraces. VMUI and Jaeger-compatible clients query the trace database."></a></p>
+
+<p>VictoriaTraces uses the VictoriaLogs storage engine internally; <strong>you do not need a separate VictoriaLogs instance</strong>. In cluster mode, <strong>vtinsert</strong>, <strong>vtstorage</strong>, and <strong>vtselect</strong> separate ingestion, storage, and querying. <a href="https://docs.victoriametrics.com/victoriatraces/cluster/">Architecture details</a>.</p>
+<h2 id="deploy-and-operate">Deploy and operate</h2>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Documentation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Install</td>
+<td><a href="https://github.com/VictoriaMetrics/VictoriaTraces/releases/latest">Binaries</a> · <a href="https://hub.docker.com/r/victoriametrics/victoria-traces/">Docker</a> · <a href="https://docs.victoriametrics.com/victoriatraces/quick-start/">Quick start</a></td>
+</tr>
+<tr>
+<td>Run on Kubernetes</td>
+<td><a href="https://docs.victoriametrics.com/helm/victoria-traces-single/">Single-node Helm chart</a> · <a href="https://docs.victoriametrics.com/helm/victoria-traces-cluster/">Cluster Helm chart</a></td>
+</tr>
+<tr>
+<td>Choose a topology</td>
+<td><a href="https://docs.victoriametrics.com/victoriatraces/">Single-node</a> · <a href="https://docs.victoriametrics.com/victoriatraces/cluster/">Cluster</a></td>
+</tr>
+<tr>
+<td>Manage data and access</td>
+<td><a href="https://docs.victoriametrics.com/victoriatraces/#retention">Retention</a> · <a href="https://docs.victoriametrics.com/victoriatraces/#backup-and-restore">Backup and restore</a> · <a href="https://docs.victoriametrics.com/victoriatraces/#security">Security</a></td>
+</tr>
+<tr>
+<td>Monitor and upgrade</td>
+<td><a href="https://docs.victoriametrics.com/victoriatraces/#monitoring">Monitoring</a> · <a href="https://docs.victoriametrics.com/victoriatraces/changelog/">Changelog</a></td>
+</tr>
+</tbody></table>
+<p>Tenant headers identify partitions; use an authorization proxy to enforce access. For managed availability or commercial support, <a href="mailto:info@victoriametrics.com">contact the VictoriaMetrics team</a> to confirm the scope you need.</p>
+<h2 id="community-and-contributions">Community and contributions</h2>
+<p><a href="https://slack.victoriametrics.com/">Join Slack</a> · <a href="https://github.com/VictoriaMetrics/VictoriaTraces/issues">Report an issue</a> · <a href="https://docs.victoriametrics.com/victoriametrics/contributing/">Contribute</a> · <a href="https://github.com/VictoriaMetrics/VictoriaTraces/blob/master/LICENSE">Apache 2.0 license</a></p>
+<p>Looking for another signal? <a href="https://github.com/VictoriaMetrics/VictoriaMetrics">VictoriaMetrics — metrics</a> · <a href="https://github.com/VictoriaMetrics/VictoriaLogs">VictoriaLogs — logs</a>.</p>
+</article></main></body></html>

@@ -1,0 +1,73 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Organization README review</title><style>*{box-sizing:border-box}body{margin:0;font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1f2328;background:#fff}nav{padding:14px 24px;background:#f6f8fa;border-bottom:1px solid #d1d9e0;display:flex;gap:22px;align-items:center;flex-wrap:wrap}a{color:#0969da;text-decoration:none}a:hover{text-decoration:underline}nav strong{margin-right:auto}main{max-width:960px;margin:32px auto;border:1px solid #d1d9e0;border-radius:6px}header{font-size:14px;padding:12px 24px;border-bottom:1px solid #d1d9e0;background:#f6f8fa}article{padding:32px}h1{font-size:30px;line-height:1.25;margin:24px 0 16px;padding-bottom:12px;border-bottom:1px solid #d1d9e0}h2{font-size:24px;line-height:1.3;margin:30px 0 16px;padding-bottom:8px;border-bottom:1px solid #d1d9e0}p{margin:0 0 16px}p[align=center]{text-align:center}h1[align=center]{text-align:center}img{max-width:100%;height:auto;vertical-align:middle}pre{font:13px/1.5 ui-monospace,SFMono-Regular,monospace;padding:16px;background:#f6f8fa;border-radius:6px;overflow:auto}code{font:85% ui-monospace,SFMono-Regular,monospace;background:#eff1f3;padding:.15em .3em;border-radius:4px}pre code{padding:0;background:none}li{margin:8px 0}ul{padding-left:25px}table{display:block;overflow:auto;border-collapse:collapse;margin:16px 0;width:100%}th,td{border:1px solid #d1d9e0;padding:8px 13px;text-align:left}tr:nth-child(2n){background:#f6f8fa}blockquote{border-left:4px solid #9a6700;background:#fff8c5;padding:12px 16px;margin:16px 0;color:#4d3c12}blockquote p{margin:0}sub{font-size:13px;vertical-align:baseline;color:#59636e}.notice{font-size:13px;color:#59636e}.index{padding:32px}.index a{display:block;border:1px solid #d1d9e0;padding:18px;margin:12px 0;border-radius:6px}@media(max-width:600px){main{margin:12px 8px}article{padding:18px}h1{font-size:26px}h2{font-size:22px}nav{gap:12px;padding:12px}td,th{min-width:130px}body{font-size:15px}}@media(prefers-color-scheme:dark){body{background:#0d1117;color:#e6edf3}nav,header,pre,tr:nth-child(2n){background:#161b22}main,th,td,header,nav,h1,h2{border-color:#30363d}a{color:#58a6ff}code{background:#262c36}blockquote{background:#291f00;color:#f2dc8a}sub,.notice{color:#9da7b3}}</style></head><body><nav><strong>VictoriaMetrics · README review</strong><a href="VictoriaMetrics.html">VictoriaMetrics</a><a href="VictoriaLogs.html">VictoriaLogs</a><a href="VictoriaTraces.html">VictoriaTraces</a><a href="Organization.html">Organization</a></nav><main><header>VictoriaMetrics / .github / profile / README.md <span class="notice"> · Local proposal</span></header><article><p align="center">
+  <picture><source media="(prefers-color-scheme: dark)" srcset="../organization/profile/assets/logo-dark.svg"><img src="../organization/profile/assets/logo.svg" width="310" alt="VictoriaMetrics"></picture>
+</p>
+<h1 align="center">Open-source databases for metrics, logs, and traces.</h1>
+<p align="center">Start with the signal you need.<br>Collect with your existing tools, explore your data, and choose how you deploy.</p>
+<p align="center"><a href="https://docs.victoriametrics.com/">Documentation</a> · <a href="https://victoriametrics.com/">Website</a> · <a href="https://slack.victoriametrics.com/">Join the community</a> · <a href="https://docs.victoriametrics.com/victoriametrics/casestudies/">Customer stories</a></p>
+
+<p align="center"><a href="../organization/profile/assets/product-map.svg"><img src="../organization/profile/assets/product-map.png" width="840" alt="Three independently deployable products: VictoriaMetrics for metrics, VictoriaLogs for logs, and VictoriaTraces for distributed traces."></a></p>
+
+<h2 id="choose-your-starting-point">Choose your starting point</h2>
+<table>
+<thead>
+<tr>
+<th>Your task</th>
+<th>Project</th>
+<th>Explore</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Store Prometheus metrics and query time series</td>
+<td><strong><a href="https://github.com/VictoriaMetrics/VictoriaMetrics">VictoriaMetrics</a></strong></td>
+<td><a href="https://docs.victoriametrics.com/victoriametrics/quick-start/">Quick start</a> · <a href="https://play.victoriametrics.com/">Live demo</a></td>
+</tr>
+<tr>
+<td>Search messages and aggregate log data</td>
+<td><strong><a href="https://github.com/VictoriaMetrics/VictoriaLogs">VictoriaLogs</a></strong></td>
+<td><a href="https://docs.victoriametrics.com/victorialogs/quickstart/">Quick start</a> · <a href="https://play-vmlogs.victoriametrics.com/">Live demo</a></td>
+</tr>
+<tr>
+<td>Follow requests across services and inspect spans</td>
+<td><strong><a href="https://github.com/VictoriaMetrics/VictoriaTraces">VictoriaTraces</a></strong></td>
+<td><a href="https://docs.victoriametrics.com/victoriatraces/quick-start/">Quick start</a> · <a href="https://play-vtraces.victoriametrics.com/select/vmui/">Live demo</a></td>
+</tr>
+</tbody></table>
+<p>Each database has open-source single-node and cluster versions under Apache 2.0. They can be deployed independently. <strong>VictoriaTraces is a work in progress:</strong> review its <a href="https://github.com/VictoriaMetrics/VictoriaTraces">compatibility notice and release notes</a> before adopting or upgrading it.</p>
+<h2 id="build-around-your-existing-tools">Build around your existing tools</h2>
+<ul>
+<li><strong>Collect:</strong> use <a href="https://docs.victoriametrics.com/victoriametrics/vmagent/">vmagent</a> and Prometheus for metrics, <a href="https://docs.victoriametrics.com/victorialogs/data-ingestion/">supported log collectors</a> for logs, and <a href="https://docs.victoriametrics.com/victoriatraces/data-ingestion/opentelemetry/">OpenTelemetry</a> for traces.</li>
+<li><strong>Explore:</strong> use each product&#39;s built-in UI, or connect Grafana through the <a href="https://docs.victoriametrics.com/victoriametrics/integrations/grafana/">metrics integration</a>, <a href="https://docs.victoriametrics.com/victorialogs/victorialogs-datasource/">VictoriaLogs data source</a>, and <a href="https://docs.victoriametrics.com/victoriatraces/querying/">Jaeger-compatible trace integration</a>.</li>
+<li><strong>Operate:</strong> use the <a href="https://github.com/VictoriaMetrics/operator">VictoriaMetrics Operator</a>, <a href="https://github.com/VictoriaMetrics/helm-charts">Helm charts</a>, <a href="https://docs.victoriametrics.com/victoriametrics/vmauth/">vmauth</a>, and <a href="https://docs.victoriametrics.com/victoriametrics/vmalert/">vmalert</a>.</li>
+</ul>
+<h2 id="choose-how-you-run-it">Choose how you run it</h2>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>What it offers</th>
+<th>Next step</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Open source</strong></td>
+<td>Self-managed single-node and cluster deployments, with community support</td>
+<td><a href="https://docs.victoriametrics.com/">Browse documentation</a></td>
+</tr>
+<tr>
+<td><strong>Enterprise</strong></td>
+<td>Commercial support and additional capabilities; features and LTS coverage vary by product</td>
+<td><a href="https://docs.victoriametrics.com/victoriametrics/enterprise/">Metrics Enterprise</a> · <a href="mailto:info@victoriametrics.com">Confirm product coverage</a></td>
+</tr>
+<tr>
+<td><strong>Cloud</strong></td>
+<td>Managed deployments in VictoriaMetrics Cloud</td>
+<td><a href="https://victoriametrics.com/products/cloud/">Explore Cloud</a></td>
+</tr>
+</tbody></table>
+<p>For support or deployment guidance, <a href="mailto:info@victoriametrics.com">contact the team</a>.</p>
+<h2 id="see-how-teams-use-victoriametrics">See how teams use VictoriaMetrics</h2>
+<p>Read the <a href="https://docs.victoriametrics.com/victoriametrics/casestudies/">Grammarly, Roblox, Wix, Spotify, and other customer stories</a> for workload-specific examples. Results depend on the system and workload; the stories provide context for your own evaluation.</p>
+<h2 id="join-the-community">Join the community</h2>
+<p><a href="https://slack.victoriametrics.com/">Ask questions on Slack</a> · <a href="https://docs.victoriametrics.com/victoriametrics/contributing/">Contribute</a> · <a href="https://victoriametrics.com/blog/">Read the blog</a> · <a href="https://www.youtube.com/@VictoriaMetrics">Watch technical videos</a> · <a href="https://careers.victoriametrics.com/">Explore careers</a></p>
+<p>Report bugs in the relevant product repository. For vulnerability reporting and security information, see our <a href="https://victoriametrics.com/security/">security page</a>.</p>
+</article></main></body></html>
