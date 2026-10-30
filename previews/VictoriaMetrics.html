@@ -1,0 +1,78 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>VictoriaMetrics README review</title><style>*{box-sizing:border-box}body{margin:0;font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1f2328;background:#fff}nav{padding:14px 24px;background:#f6f8fa;border-bottom:1px solid #d1d9e0;display:flex;gap:22px;align-items:center;flex-wrap:wrap}a{color:#0969da;text-decoration:none}a:hover{text-decoration:underline}nav strong{margin-right:auto}main{max-width:960px;margin:32px auto;border:1px solid #d1d9e0;border-radius:6px}header{font-size:14px;padding:12px 24px;border-bottom:1px solid #d1d9e0;background:#f6f8fa}article{padding:32px}h1{font-size:30px;line-height:1.25;margin:24px 0 16px;padding-bottom:12px;border-bottom:1px solid #d1d9e0}h2{font-size:24px;line-height:1.3;margin:30px 0 16px;padding-bottom:8px;border-bottom:1px solid #d1d9e0}p{margin:0 0 16px}p[align=center]{text-align:center}h1[align=center]{text-align:center}img{max-width:100%;height:auto;vertical-align:middle}pre{font:13px/1.5 ui-monospace,SFMono-Regular,monospace;padding:16px;background:#f6f8fa;border-radius:6px;overflow:auto}code{font:85% ui-monospace,SFMono-Regular,monospace;background:#eff1f3;padding:.15em .3em;border-radius:4px}pre code{padding:0;background:none}li{margin:8px 0}ul{padding-left:25px}table{display:block;overflow:auto;border-collapse:collapse;margin:16px 0;width:100%}th,td{border:1px solid #d1d9e0;padding:8px 13px;text-align:left}tr:nth-child(2n){background:#f6f8fa}blockquote{border-left:4px solid #9a6700;background:#fff8c5;padding:12px 16px;margin:16px 0;color:#4d3c12}blockquote p{margin:0}sub{font-size:13px;vertical-align:baseline;color:#59636e}.notice{font-size:13px;color:#59636e}.index{padding:32px}.index a{display:block;border:1px solid #d1d9e0;padding:18px;margin:12px 0;border-radius:6px}@media(max-width:600px){main{margin:12px 8px}article{padding:18px}h1{font-size:26px}h2{font-size:22px}nav{gap:12px;padding:12px}td,th{min-width:130px}body{font-size:15px}}@media(prefers-color-scheme:dark){body{background:#0d1117;color:#e6edf3}nav,header,pre,tr:nth-child(2n){background:#161b22}main,th,td,header,nav,h1,h2{border-color:#30363d}a{color:#58a6ff}code{background:#262c36}blockquote{background:#291f00;color:#f2dc8a}sub,.notice{color:#9da7b3}}</style></head><body><nav><strong>VictoriaMetrics · README review</strong><a href="VictoriaMetrics.html">VictoriaMetrics</a><a href="VictoriaLogs.html">VictoriaLogs</a><a href="VictoriaTraces.html">VictoriaTraces</a><a href="Organization.html">Organization</a></nav><main><header>VictoriaMetrics / VictoriaMetrics / README.md <span class="notice"> · Local proposal</span></header><article><p align="center">
+  <picture><source media="(prefers-color-scheme: dark)" srcset="../VictoriaMetrics/assets/logo-dark.svg"><img src="../VictoriaMetrics/assets/logo.svg" width="280" alt="VictoriaMetrics"></picture>
+</p>
+<h1 align="center">Keep your metrics. Scale your monitoring.</h1>
+<p align="center">An open-source time series database for Prometheus metrics and beyond.<br>Collect, store, and query metrics with a single binary or a cluster.</p>
+
+<p align="center">
+  <a href="#try-it-locally">Quick start</a> · <a href="https://play.victoriametrics.com/">Live playground</a> · <a href="https://docs.victoriametrics.com/victoriametrics/">Documentation</a> · <a href="https://slack.victoriametrics.com/">Community</a>
+</p>
+<p align="center">
+  <a href="https://github.com/VictoriaMetrics/VictoriaMetrics/releases"><img src="https://img.shields.io/github/v/release/VictoriaMetrics/VictoriaMetrics?label=release&color=621773" alt="Latest release"></a>
+  <a href="https://github.com/VictoriaMetrics/VictoriaMetrics/actions/workflows/build.yml"><img src="https://github.com/VictoriaMetrics/VictoriaMetrics/actions/workflows/build.yml/badge.svg?branch=master" alt="Build status"></a>
+  <a href="https://github.com/VictoriaMetrics/VictoriaMetrics/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-Apache%202.0-blue" alt="Apache 2.0"></a>
+</p>
+
+<p align="center"><a href="https://play.victoriametrics.com/"><img src="../VictoriaMetrics/assets/metrics-query.jpg" width="840" alt="VictoriaMetrics VMUI showing a MetricsQL query and HTTP request rates grouped by path."></a></p>
+<p align="center"><sub>Query and graph metrics in the built-in VMUI. <a href="https://play.victoriametrics.com/">Explore the live playground →</a></sub></p>
+
+<h2 id="why-victoriametrics">Why VictoriaMetrics?</h2>
+<ul>
+<li><strong>Keep your Prometheus workflow.</strong> Use Prometheus remote write, PromQL-compatible queries, and your existing Grafana dashboards. <a href="https://docs.victoriametrics.com/victoriametrics/integrations/prometheus/">Prometheus integration</a>.</li>
+<li><strong>Start with fewer moving parts.</strong> The single-node database runs as one binary without an external database. Move to independently scalable ingestion, query, and storage components when you need a cluster. <a href="https://docs.victoriametrics.com/victoriametrics/cluster-victoriametrics/">Deployment options</a>.</li>
+<li><strong>Query across your metric sources.</strong> Collect from multiple Prometheus servers or supported ingestion protocols and query the data together with <a href="https://docs.victoriametrics.com/victoriametrics/metricsql/">MetricsQL</a>.</li>
+<li><strong>Evaluate with evidence.</strong> Read how <a href="https://docs.victoriametrics.com/victoriametrics/casestudies/">Grammarly, Roblox, Wix, and other teams</a> run VictoriaMetrics, then test with your own workload.</li>
+</ul>
+<h2 id="try-it-locally">Try it locally</h2>
+<p>With Docker installed, start a single-node instance that collects its own metrics:</p>
+<pre><code class="language-sh">docker run --rm --name victoriametrics \
+  -p 127.0.0.1:8428:8428 \
+  -v victoriametrics-data:/victoria-metrics-data \
+  victoriametrics/victoria-metrics:v1.155.0 \
+  -storageDataPath=/victoria-metrics-data -selfScrapeInterval=5s
+</code></pre>
+<p>After about 30 seconds, open <a href="http://localhost:8428/vmui/">VMUI</a> and run:</p>
+<pre><code class="language-promql">process_resident_memory_bytes
+</code></pre>
+<p>You should see the database process&#39;s resident memory usage. The named Docker volume preserves data between runs. For binaries, Kubernetes, and collecting application metrics, follow the <a href="https://docs.victoriametrics.com/victoriametrics/quick-start/">full quick start</a>.</p>
+<h2 id="how-it-works">How it works</h2>
+<p align="center"><a href="../VictoriaMetrics/assets/how-it-works.svg"><img src="../VictoriaMetrics/assets/how-it-works.png" width="840" alt="Applications and exporters are scraped by vmagent or Prometheus. Remote write sends metrics to VictoriaMetrics. VMUI, Grafana, and vmalert query the database."></a></p>
+
+<p>The diagram shows a typical collection path. Single-node VictoriaMetrics can also scrape targets directly. In a cluster, <strong>vminsert</strong> accepts writes, <strong>vmstorage</strong> stores data, and <strong>vmselect</strong> serves queries. <a href="https://docs.victoriametrics.com/victoriametrics/cluster-victoriametrics/">Architecture and sizing</a>.</p>
+<h2 id="connect-your-tools">Connect your tools</h2>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Start here</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Collect metrics</td>
+<td><a href="https://docs.victoriametrics.com/victoriametrics/vmagent/">vmagent</a> · <a href="https://docs.victoriametrics.com/victoriametrics/integrations/prometheus/">Prometheus</a> · <a href="https://docs.victoriametrics.com/victoriametrics/integrations/">Other ingestion protocols</a></td>
+</tr>
+<tr>
+<td>Query and visualize</td>
+<td><a href="https://docs.victoriametrics.com/victoriametrics/single-server-victoriametrics/#vmui">VMUI</a> · <a href="https://docs.victoriametrics.com/victoriametrics/integrations/grafana/">Grafana</a> · <a href="https://docs.victoriametrics.com/victoriametrics/metricsql/">MetricsQL</a></td>
+</tr>
+<tr>
+<td>Evaluate rules and alerts</td>
+<td><a href="https://docs.victoriametrics.com/victoriametrics/vmalert/">vmalert</a></td>
+</tr>
+<tr>
+<td>Run on Kubernetes</td>
+<td><a href="https://docs.victoriametrics.com/helm/">Helm charts</a> · <a href="https://docs.victoriametrics.com/operator/">Operator</a></td>
+</tr>
+<tr>
+<td>Operate and upgrade</td>
+<td><a href="https://docs.victoriametrics.com/victoriametrics/single-server-victoriametrics/">Operations guide</a> · <a href="https://github.com/VictoriaMetrics/VictoriaMetrics/releases">Releases</a> · <a href="https://docs.victoriametrics.com/victoriametrics/changelog/">Changelog</a></td>
+</tr>
+</tbody></table>
+<h2 id="choose-how-you-run-it">Choose how you run it</h2>
+<p><strong>Open source:</strong> single-node and cluster versions are available under Apache 2.0.</p>
+<p><strong>Enterprise:</strong> add capabilities such as downsampling, multiple retentions, and long-term support. Review the <a href="https://docs.victoriametrics.com/victoriametrics/enterprise/">feature and support scope</a> or <a href="https://victoriametrics.com/products/enterprise/trial/">request a trial</a>.</p>
+<p><strong>Managed:</strong> use <a href="https://victoriametrics.com/products/cloud/">VictoriaMetrics Cloud</a> to run managed deployments.</p>
+<h2 id="community-and-contributions">Community and contributions</h2>
+<p><a href="https://slack.victoriametrics.com/">Join Slack</a> · <a href="https://github.com/VictoriaMetrics/VictoriaMetrics/issues">Report an issue</a> · <a href="https://docs.victoriametrics.com/victoriametrics/contributing/">Contribute</a> · <a href="https://victoriametrics.com/security/">Security</a> · <a href="https://careers.victoriametrics.com/">Careers</a></p>
+<p>Looking for another signal? <a href="https://github.com/VictoriaMetrics/VictoriaLogs">VictoriaLogs — logs</a> · <a href="https://github.com/VictoriaMetrics/VictoriaTraces">VictoriaTraces — traces</a>.</p>
+</article></main></body></html>
